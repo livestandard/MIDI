@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XG</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <header>
+    <h1>MIDI編曲自動演奏講座</h1>
+    <h1>XGサポート編</h1>
+  </header>
+
+  <div class="container">
+    <section class="first">
+      <h2>はじめに</h2>
+      <p>XGサポートは、一言で表すとMDR録音です。それを念頭に作成してもらえればと思います。</p>
+    </section>
+
+    <section class="intoro">
+      <h2>できること</h2>
+      <ul>
+        <li>上鍵盤、下鍵盤、足鍵盤の音で自動演奏させる</li>
+        <li>本体の内臓音源（XG音源）を使って自動演奏させる</li>
+      </ul>
+    </section>
+
+    <section class="process">
+      <h2>手順</h2>
+      <ol>
+        <li>シーケンスを組み終わったデータを用意する</li>
+        <p>必要なのはテンポとそれぞれのシーケンスが何小節あるかということだけなので、リズムが完成している必要はないです。ただし、<span class="redbold">テンポやシーケンスの小節数</span>が変わる場合、XGを作り直さなければいけないので注意しましょう。特に<span class="redbold">演奏開始前のカウント</span>の分を忘れがちなので注意しましょう。</p>
+
+        <li>MDR録音をする</li>
+        <p>MDRからデータを選択して赤丸を押す。「上書きしますか？」と聞かれるので「はい」を選択。
+        </p>
+        <p>その後三角ボタンを押し、砂時計の表示が消えたら<span class="redbold">すぐに</span>シーケンスを押し、リズムをスタートさせる。<span class="redbold">三角ボタンを押す前に先にシーケンスを押してはいけない</span></p>
+
+        <li>パソコンで今録音したレジストデータを開く</li>
+        <p>MDR_000.MIDというファイルがあるので、それを自分のパソコンのデスクトップ等にコピーして、それをDominoで開く。MIDIファイルのDominoでの開き方は<a href="#" >こちら</a></p>
+
+        <li>System Setup トラックの修正</li>
+        <p>Dominoの左側のトラックリストで、上から2番目の「System Setup」を選択する。トラックリストが表示されてない人は<a href="#">こちら</a></p>
+        <p>次に「EL ON」「SEQ1~4」「Rhythm Start」だけ残し、他を削除する。選択してDeleteキーで消す。また、リズムスタートが何小節目にあるか確認する。この場合は○小節目となる。</p>
+
+        <li>MIDIノートをコピー</li>
+        <p>購入したMIDIを読み込んだDominoを新たに起動し、XGで再生したい部分を選択してコピーし、MDR_000.MIDを読み込んだ方のDominoに貼り付ける。この時、どのチャンネルに貼り付けるかにより、どの音源で自動演奏させるか決められる。</p>
+        
+        <li>プログラムチェンジを合わせる（XG音源を利用する場合）</li>
+        <p>元のMIDIを確認し、同じ音になるように合わせる</p>
+      </ol>
+    </section>
+  </div>
+
+</body>
+</html>
